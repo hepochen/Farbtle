@@ -48,7 +48,8 @@
 			</div>
 		</article>
 		{% endfor %}
-
+		
+		{% set paginator = get_paginator() %}
 		{% if paginator.has_next %}
 		<nav class="pager">
 			<a href="/archive" class="next">Continue</a>
